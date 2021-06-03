@@ -6,7 +6,7 @@ const style = {
 	border: '1px solid grey',
 	marginLeft: 'auto',
 	marginRight: 'auto',
-	width: '10em',
+	width: '10%',
 };
 
 const Items = () => {

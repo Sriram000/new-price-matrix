@@ -1,4 +1,4 @@
-import priceMatrixManager from '../services/priceMatrixManager';
+import PriceMatrixManager from '../services/priceMatrixManager';
 
 const setItemInput = ({ data }) => ({
 	itemInput: data,
@@ -11,7 +11,7 @@ const setPriceInput = ({ data }) => ({
 const addFromInput = ({ state }) => ({
 	itemInput: '',
 	priceInput: '',
-	items: priceMatrixManager.add(
+	items: PriceMatrixManager.add(
 		state.items, state.itemInput, state.priceInput
 	),
 });

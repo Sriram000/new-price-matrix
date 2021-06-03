@@ -6,6 +6,7 @@ import PriceInput from './components/priceInput';
 import Items from './components/items';
 import context from './core/context';
 import SampleService from './services/sample';
+import PriceMatrix from './components/priceMatrix';
 
 const App = () => {
 	useEffect(SampleService.sayHai, []);
@@ -17,6 +18,7 @@ const App = () => {
 				Name { ItemInput() } Price { PriceInput() }{ AddButton() }
 			</div>
 			<div>{ Items() }</div>
+			<div>{ PriceMatrix() }</div>
 			<div>Refresh ID: { context.state.refreshID }</div>
 		</div>
 	);

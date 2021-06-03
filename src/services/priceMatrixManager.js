@@ -13,8 +13,21 @@ const add = (
 	items, item, value
 ) => items.concat(getItem(item, value));
 
-const priceMatrixManager = {
+const getMinPriceItem = (items) =>
+	items.reduce((min, current) =>
+		(min.price < current.price ? min : current), {});
+
+const getMaxPriceItem = (items) =>
+	items.reduce((min, current) =>
+		(min.price > current.price ? min : current), {});
+
+const isEmpty = (items) => items.length === 0;
+
+const PriceMatrixManager = {
 	add,
+	getMinPriceItem,
+	getMaxPriceItem,
+	isEmpty,
 };
 
-export default priceMatrixManager;
+export default PriceMatrixManager;
