@@ -1,16 +1,22 @@
 import { React, useEffect } from 'react';
 import './App.css';
+import AddButton from './components/addButton';
+import ItemInput from './components/itemInput';
+import PriceInput from './components/priceInput';
+import Items from './components/items';
 import context from './core/context';
 import SampleService from './services/sample';
-import SimpleButton from './components/simpleButton';
 
 const App = () => {
 	useEffect(SampleService.sayHai, []);
 
 	return (
 		<div className="App">
-			<div>Count: { context.state.count }</div>
-			<div>{ SimpleButton() }</div>
+			<div>PRICE-MATRIX</div>
+			<div>
+				Name { ItemInput() } Price { PriceInput() }{ AddButton() }
+			</div>
+			<div>{ Items() }</div>
 			<div>Refresh ID: { context.state.refreshID }</div>
 		</div>
 	);
