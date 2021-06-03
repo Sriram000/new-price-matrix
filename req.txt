@@ -1,0 +1,15 @@
+Price Matrix
+------------
+Create a react app (from react-starter) to display a price matrix for the items given by the user as input.
+
+Last completed: 1
+
+Features:
+  1. Create two inputs and a button to get user input.
+		The first one is for "item" and the second is for "price".
+		Once the button is clicked, the item data should be added to a display list (like the one in todos).
+  2. Create a component to display the min and max prices among all items (not for each individual item).
+  3. Introduce a third input for "shop" of every item.
+  4. Display the min and max price for every item along with the respective shop name.
+  5. Limit the possible inputs for items and shops, through config.
+  6. Replace both item and shop inputs with select boxes.
