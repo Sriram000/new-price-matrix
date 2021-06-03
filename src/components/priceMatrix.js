@@ -2,7 +2,14 @@ import React from 'react';
 import context from '../core/context';
 import priceMatrixManager from '../services/priceMatrixManager';
 
-const style = {};
+const style = {
+	position: 'absolute',
+	top: 0,
+	right: 0,
+	height: '100%',
+	width: '50%',
+	background: 'bisque',
+};
 
 const PriceMatrix = () => {
 	const { items } = context.state;
