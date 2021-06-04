@@ -13,3 +13,6 @@ Features:
   4. Display the min and max price for every item along with the respective shop name.
   5. Limit the possible inputs for items and shops, through config.
   6. Replace both item and shop inputs with select boxes.
+	7. Make the items editable.
+	8. Filter the items, based on shops. Use a select box as the filter control.
+	9. Make the filters impact the price matrix too.
