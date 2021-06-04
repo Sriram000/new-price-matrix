@@ -1,13 +1,13 @@
 import { React } from 'react';
 import './App.css';
 import ItemPane from './components/itemPane';
-import PriceMatrix from './components/priceMatrix';
+import PriceMatrixPane from './components/priceMatrixPane';
 
 const App = () =>
 
 	<div className="App">
 		{ ItemPane() }
-		{ PriceMatrix() }
+		{ PriceMatrixPane() }
 	</div>;
 
 export default App;
