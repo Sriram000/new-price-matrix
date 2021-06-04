@@ -15,4 +15,7 @@ Features:
   6. Replace both item and shop inputs with select boxes.
 	7. Make the items editable.
 	8. Filter the items, based on shops. Use a select box as the filter control.
-	9. Make the filters impact the price matrix too.
+	9. Filter the items, based on products.
+	10. Make the product filters impact the price matrix too.
+
+all - all shops in filter
