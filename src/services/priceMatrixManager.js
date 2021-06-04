@@ -3,15 +3,20 @@ import config from '../core/config';
 
 const { idLength } = config;
 
-const getItem = (item, value) => ({
+const getItem = (
+	item, value, shopName
+) => ({
 	id: rndString(idLength),
 	name: item,
 	price: Number(value),
+	shop: shopName,
 });
 
 const add = (
-	items, item, value
-) => items.concat(getItem(item, value));
+	items, item, value, shopName
+) => items.concat(getItem(
+	item, value, shopName
+));
 
 const getMinPriceItem = (items) =>
 	items.reduce((min, current) =>

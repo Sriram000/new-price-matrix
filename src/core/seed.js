@@ -1,6 +1,7 @@
 const seed = {
 	itemInput: '',
 	priceInput: '',
+	shopInput: '',
 	items: [],
 };
 

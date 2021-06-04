@@ -8,17 +8,23 @@ const setPriceInput = ({ data }) => ({
 	priceInput: data,
 });
 
+const setShopInput = ({ data }) => ({
+	shopInput: data,
+});
+
 const addFromInput = ({ state }) => ({
 	itemInput: '',
 	priceInput: '',
+	shopInput: '',
 	items: PriceMatrixManager.add(
-		state.items, state.itemInput, state.priceInput
+		state.items, state.itemInput, state.priceInput, state.shopInput
 	),
 });
 
 const actions = {
 	setItemInput,
 	setPriceInput,
+	setShopInput,
 	addFromInput,
 };
 

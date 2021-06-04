@@ -19,6 +19,7 @@ const Items = () => {
 				<tr>
 					<th>Name</th>
 					<th>Price</th>
+					<th>Shop</th>
 				</tr>
 			</thead>
 			{ context.state.items.map(Item) }
