@@ -1,29 +1,25 @@
 import React from 'react';
 import context from '../core/context';
-import priceMatrixManager from '../services/priceMatrixManager';
+import PriceMatrixList from './priceMatrixList';
+import PriceMatrixManager from '../services/priceMatrixManager';
 
 const style = {
-	color: 'red',
+	color: 'green',
 };
 
 const PriceMatrix = () => {
 	const { items } = context.state;
-	const maximumPriceItem = priceMatrixManager.getMaxPriceItem(items);
-	const minimumPriceItem = priceMatrixManager.getMinPriceItem(items);
+	const priceMatrix = PriceMatrixManager.getPriceMatrix(items);
 
 	return <tbody>
 		<tr style={ style }>
+			<th>Product</th>
 			<th>Name</th>
 			<th>Price</th>
 			<th>Name</th>
 			<th>Price</th>
 		</tr>
-		<tr>
-			<td>{ maximumPriceItem.name }</td>
-			<td>{ maximumPriceItem.price }</td>
-			<td>{ minimumPriceItem.name }</td>
-			<td>{ minimumPriceItem.price }</td>
-		</tr>
+		{ priceMatrix.map(PriceMatrixList) }
 	</tbody>;
 };
 
