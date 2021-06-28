@@ -21,11 +21,21 @@ const addFromInput = ({ state }) => ({
 	),
 });
 
+const setShop = ({ data }) => ({
+	shop: data,
+});
+
+const setItem = ({ data }) => ({
+	item: data,
+});
+
 const actions = {
 	setItemInput,
 	setPriceInput,
 	setShopInput,
 	addFromInput,
+	setShop,
+	setItem,
 };
 
 export default actions;

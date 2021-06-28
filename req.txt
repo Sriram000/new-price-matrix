@@ -2,7 +2,7 @@ Price Matrix
 ------------
 Create a react app (from react-starter) to display a price matrix for the items given by the user as input.
 
-Last completed: 1
+Last completed: 6
 
 Features:
   1. Create two inputs and a button to get user input.
