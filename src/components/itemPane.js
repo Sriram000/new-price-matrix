@@ -18,9 +18,9 @@ const ItemPane = () =>
 
 	<div style={ style }>
 		<div>
-			Name { ItemSelect() }
-			Price { PriceInput() }
 			Shop { ShopSelect() }
+			Product { ItemSelect() }
+			Price { PriceInput() }
 			{ AddButton() }
 		</div>
 		<div>{ Items() }</div>
