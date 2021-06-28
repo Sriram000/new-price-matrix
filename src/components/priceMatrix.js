@@ -14,9 +14,9 @@ const PriceMatrix = () => {
 	return <tbody>
 		<tr style={ style }>
 			<th>Product</th>
-			<th>Name</th>
+			<th>Shop</th>
 			<th>Price</th>
-			<th>Name</th>
+			<th>Shop</th>
 			<th>Price</th>
 		</tr>
 		{ priceMatrix.map(PriceMatrixList) }

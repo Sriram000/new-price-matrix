@@ -1,6 +1,6 @@
 const config = {
 	idLength: 16,
-	items: [
+	products: [
 		'Carrot',
 		'Apple',
 		'Guava',

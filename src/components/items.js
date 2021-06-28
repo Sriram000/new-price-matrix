@@ -17,9 +17,9 @@ const Items = () => {
 		: <table style={ style }>
 			<thead>
 				<tr>
-					<th>Name</th>
-					<th>Price</th>
 					<th>Shop</th>
+					<th>Product</th>
+					<th>Price</th>
 				</tr>
 			</thead>
 			{ context.state.items.map(Item) }

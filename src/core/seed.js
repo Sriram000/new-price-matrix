@@ -1,12 +1,14 @@
 import config from './config';
 
+const { products, shops } = config;
+
 const seed = {
-	itemInput: '',
-	priceInput: '',
 	shopInput: '',
+	productInput: '',
+	priceInput: '',
 	items: [],
-	item: config.items[0],
-	shop: config.shops[0],
+	product: products[0],
+	shop: shops[0],
 };
 
 export default seed;

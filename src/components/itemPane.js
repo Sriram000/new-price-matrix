@@ -2,7 +2,7 @@ import React from 'react';
 import AddButton from './addButton';
 import PriceInput from './priceInput';
 import Items from './items';
-import ItemSelect from './itemSelect';
+import ProductSelect from './productSelect';
 import ShopSelect from './shopSelect';
 
 const style = {
@@ -19,7 +19,7 @@ const ItemPane = () =>
 	<div style={ style }>
 		<div>
 			Shop { ShopSelect() }
-			Product { ItemSelect() }
+			Product { ProductSelect() }
 			Price { PriceInput() }
 			{ AddButton() }
 		</div>

@@ -1,23 +1,23 @@
 import PriceMatrixManager from '../services/priceMatrixManager';
 
-const setItemInput = ({ data }) => ({
-	itemInput: data,
+const setShopInput = ({ data }) => ({
+	shopInput: data,
+});
+
+const setProductInput = ({ data }) => ({
+	productInput: data,
 });
 
 const setPriceInput = ({ data }) => ({
 	priceInput: data,
 });
 
-const setShopInput = ({ data }) => ({
-	shopInput: data,
-});
-
 const addFromInput = ({ state }) => ({
-	itemInput: '',
-	priceInput: '',
 	shopInput: '',
+	productInput: '',
+	priceInput: '',
 	items: PriceMatrixManager.add(
-		state.items, state.itemInput, state.priceInput, state.shopInput
+		state.items, state.productInput, state.priceInput, state.shopInput
 	),
 });
 
@@ -25,17 +25,17 @@ const setShop = ({ data }) => ({
 	shop: data,
 });
 
-const setItem = ({ data }) => ({
-	item: data,
+const setProduct = ({ data }) => ({
+	product: data,
 });
 
 const actions = {
-	setItemInput,
-	setPriceInput,
 	setShopInput,
+	setProductInput,
+	setPriceInput,
 	addFromInput,
 	setShop,
-	setItem,
+	setProduct,
 };
 
 export default actions;

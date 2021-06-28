@@ -4,7 +4,7 @@ import context from '../core/context';
 const AddButton = () =>
 	<button
 		disabled={
-			context.state.itemInput === '' && context.state.priceInput === ''
+			context.state.productInput === '' && context.state.priceInput === ''
 		}
 		onClick={ () => context.actions.addFromInput() }
 	> Add
