@@ -12,9 +12,7 @@ const getItem = (
 	shop: shop,
 });
 
-const add = (
-	items, product, price, shop
-) => items.concat(getItem(
+const add = ({ items, product, price, shop }) => items.concat(getItem(
 	product, price, shop
 ));
 

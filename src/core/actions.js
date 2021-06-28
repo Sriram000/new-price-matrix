@@ -9,16 +9,12 @@ const setProductInput = ({ data }) => ({
 });
 
 const setPriceInput = ({ data }) => ({
-	priceInput: data,
+	price: data,
 });
 
 const addFromInput = ({ state }) => ({
-	shopInput: '',
-	productInput: '',
-	priceInput: '',
-	items: PriceMatrixManager.add(
-		state.items, state.productInput, state.priceInput, state.shopInput
-	),
+	price: '',
+	items: PriceMatrixManager.add(state),
 });
 
 const setShop = ({ data }) => ({

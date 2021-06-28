@@ -12,7 +12,7 @@ const Option = (product) =>
 const ProductSelect = () =>
 	<select
 		value={ context.state.product }
-		onChange={ (evt) => context.actions.setproduct(evt.target.value) }
+		onChange={ (evt) => context.actions.setProduct(evt.target.value) }
 	>
 		{ config.products.map(Option) }
 	</select>;
