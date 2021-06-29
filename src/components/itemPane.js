@@ -1,10 +1,9 @@
 import React from 'react';
-import AddButton from './addButton';
 import PriceInput from './priceInput';
 import Items from './items';
 import ProductSelect from './productSelect';
 import ShopSelect from './shopSelect';
-import EditButton from './editButton';
+import ActionButton from './actionButton';
 
 const style = {
 	position: 'absolute',
@@ -22,8 +21,7 @@ const ItemPane = () =>
 			Shop { ShopSelect() }
 			Product { ProductSelect() }
 			Price { PriceInput() }
-			{ AddButton() }
-			{ EditButton() }
+			{ ActionButton() }
 		</div>
 		<div>{ Items() }</div>
 	</div>;
