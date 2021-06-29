@@ -3,7 +3,7 @@ import React from 'react';
 const PriceMatrixList = (priceMatrix) => {
 	const { product, min, max } = priceMatrix;
 
-	return 	<tr>
+	return 	<tr key={ product }>
 		<td>{ product }</td>
 		<td>{ max.shop }</td>
 		<td>{ max.price }</td>

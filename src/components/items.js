@@ -22,7 +22,9 @@ const Items = () => {
 					<th>Price</th>
 				</tr>
 			</thead>
-			{ context.state.items.map(Item) }
+			<tbody>
+				{ context.state.items.map(Item) }
+			</tbody>
 		</table>;
 };
 
