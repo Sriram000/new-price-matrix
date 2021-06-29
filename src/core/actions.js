@@ -25,6 +25,18 @@ const setProduct = ({ data }) => ({
 	product: data,
 });
 
+const setEditing = ({ data }) => ({
+	editing: data,
+	shop: data.shop,
+	product: data.product,
+	price: data.price,
+});
+
+const editItem = ({ state }) => ({
+	editing: null,
+	items: PriceMatrixManager.editItem(state),
+});
+
 const actions = {
 	setShopInput,
 	setProductInput,
@@ -32,6 +44,8 @@ const actions = {
 	addFromInput,
 	setShop,
 	setProduct,
+	setEditing,
+	editItem,
 };
 
 export default actions;

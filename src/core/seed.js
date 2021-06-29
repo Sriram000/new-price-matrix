@@ -7,6 +7,7 @@ const seed = {
 	product: products[0],
 	shop: shops[0],
 	price: '',
+	editing: null,
 };
 
 export default seed;

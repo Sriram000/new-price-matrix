@@ -37,12 +37,26 @@ const getPriceMatrix = (items) => [...new Set(items.map((item) =>
 	};
 });
 
+const editItem = ({
+	items, editing, shop, product, price,
+}) =>
+	items.map((item) => (item.id !== editing.id
+		? item
+		: {
+			...item,
+			shop,
+			product,
+			price,
+		}
+	));
+
 const PriceMatrixManager = {
 	add,
 	getMinPriceItem,
 	getMaxPriceItem,
 	isEmpty,
 	getPriceMatrix,
+	editItem,
 };
 
 export default PriceMatrixManager;
