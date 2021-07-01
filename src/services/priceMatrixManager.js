@@ -54,10 +54,9 @@ const editItem = ({
 
 const getFilteredItems = ({ items, shopFilter, productFilter }) =>
 	items.filter((item) =>
-		contains(item, filters[shopFilter] || { shop: shopFilter }))
-		.filter((item) =>
-			contains(item,
-				filters[productFilter] || { product: productFilter }));
+		contains(item, filters[shopFilter] || { shop: shopFilter })
+		&& contains(item,
+			filters[productFilter] || { product: productFilter }));
 
 const PriceMatrixManager = {
 	add,
