@@ -37,6 +37,10 @@ const editItem = ({ state }) => ({
 	items: PriceMatrixManager.editItem(state),
 });
 
+const setShopFilter = ({ data }) => ({
+	shopFilter: data,
+});
+
 const actions = {
 	setShopInput,
 	setProductInput,
@@ -46,6 +50,7 @@ const actions = {
 	setProduct,
 	setEditing,
 	editItem,
+	setShopFilter,
 };
 
 export default actions;

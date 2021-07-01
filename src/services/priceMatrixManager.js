@@ -1,7 +1,9 @@
 import { rndString } from '@laufire/utils/random';
+import { contains } from '@laufire/utils/collection';
 import config from '../core/config';
 
 const { idLength } = config;
+const { filters } = config.items;
 
 const getItem = (
 	product, price, shop
@@ -50,6 +52,10 @@ const editItem = ({
 		}
 	));
 
+const getFilteredItems = ({ items, shopFilter }) =>
+	items.filter((item) =>
+		contains(item, filters[shopFilter] || { shop: shopFilter }));
+
 const PriceMatrixManager = {
 	add,
 	getMinPriceItem,
@@ -57,6 +63,7 @@ const PriceMatrixManager = {
 	isEmpty,
 	getPriceMatrix,
 	editItem,
+	getFilteredItems,
 };
 
 export default PriceMatrixManager;

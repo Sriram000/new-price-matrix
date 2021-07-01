@@ -10,6 +10,11 @@ const config = {
 		'Shop2',
 		'Shop3',
 	],
+	items: {
+		filters: {
+			all: {},
+		},
+	},
 };
 
 export default config;
