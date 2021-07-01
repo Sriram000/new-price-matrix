@@ -5,6 +5,7 @@ import ProductSelect from './productSelect';
 import ShopSelect from './shopSelect';
 import ActionButton from './actionButton';
 import ShopFilterSelect from './shopFilterSelect';
+import ProductFilterSelect from './productFilterSelect';
 
 const style = {
 	position: 'absolute',
@@ -24,6 +25,7 @@ const ItemPane = () =>
 			Price { PriceInput() }
 			{ ActionButton() }
 			{ ShopFilterSelect() }
+			{ ProductFilterSelect() }
 		</div>
 		<div>{ Items() }</div>
 	</div>;

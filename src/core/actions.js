@@ -41,6 +41,10 @@ const setShopFilter = ({ data }) => ({
 	shopFilter: data,
 });
 
+const setProductFilter = ({ data }) => ({
+	productFilter: data,
+});
+
 const actions = {
 	setShopInput,
 	setProductInput,
@@ -51,6 +55,7 @@ const actions = {
 	setEditing,
 	editItem,
 	setShopFilter,
+	setProductFilter,
 };
 
 export default actions;

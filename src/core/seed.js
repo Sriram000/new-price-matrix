@@ -10,6 +10,7 @@ const seed = {
 	price: '',
 	editing: null,
 	shopFilter: keys(config.items.filters)[0],
+	productFilter: keys(config.items.filters)[0],
 };
 
 export default seed;
